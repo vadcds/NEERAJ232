@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="neeraj.ico" rel="shortcut icon"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="neeraj.ico" rel="shortcut icon"/>
 
   <link rel="stylesheet" href="style.css">
   <title>www.neerajgames.com</title>
 </head>
-<body>
+<body oncontextmenu="return false">
   <br>
   <style>
     .fa {
@@ -44,10 +43,6 @@
   background: #dd4b39;
   color: white;
 }
-	  .fa-android {
-  background: #a4c639;
-  color: white;
-}
     </style>
   <center>
     <a href="https://instagram.com/neeraj_dhiman56?igshid=MzMyNGUyNmU2YQ==" class="fa fa-instagram"></a>
@@ -55,9 +50,8 @@
     <a href="https://wa.me/qr/VGMJI5ILP4MGH1" class="fa fa-whatsapp"></a>
     <a href="https://youtu.be/Hob_BFxeyPI?si=JV2SYG9uYmV5BWfN" class="fa fa-youtube"></a>
     <a href="https://subodhrana390.github.io/neeraj/" class="fa fa-google"></a>
-	  <a href="https://www.webintoapp.com/store/234973" class="fa fa-android"></a>
 
-    <marquee id="Neeraj"><h2>Neeraj_dhiman56</h2></marquee>
+    <marquee class="Neeraj"><h2>Neeraj_dhiman56</h2></marquee>
    
     <!-- <img src="CompressJPEG.online_512x512_image.png" id="Neeraj"> -->
   <form class="gform pure-form pure-form-stacked" method="POST" data-email="nd701041@gmail.com"
@@ -66,159 +60,194 @@
       </style>
       <div style="background:none;border:8px solid gray;border-radius: 30px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;" id="df"><br>
       <!-- <div style="background:none;border:8px solid rgb(119, 255, 0);border-radius: 30px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;" id="vansh"><br> -->
-        <b class="content-head" style="font-size: 2.3em;">Create  Account</b>
+        <b class="animate-charcter" style="font-size: 2.3em;">Create  Account</b>
         <br><br>
          <b style="margin-left: -255px;font-size: 1.3em;" id="colour">Name</b><br>
-        <input type="text" name="name" required="" style="font-size: 1em;width: 300px;"/><br><br>
-
+        <input type="text" name="name" required="" style="font-size: 1em;width: 300px;" placeholder="Enter your Name"/><br><br>
+<!-- 
         <b style="margin-left: -255px;font-size: 1.3em;" id="colour">Email</b><br>
-        <input type="email" name="email" required="" style="font-size: 1em;width: 300px;"/><br><br>
+        <input type="email" name="email" required="" style="font-size: 1em;width: 300px;"/><br><br> -->
 
          <b style="margin-left: -255px;font-size: 1.3em;" id="colour">Age</b><br>
-         <input type="number"  name="phone" required="" style="font-size: 1em;width: 300px;"/><br><br>
+         <input type="number"  name="phone" required="" style="font-size: 1em;width: 300px;" placeholder="Enter age"/><br><br>
       
-        <b style="margin-left: -110px;font-size: 1.3em;" id="colour">Comment any message</b><br>
-        <textarea  name="message" rows="5" cols="22" required="" style="font-size: 1.3em;width: 300px;"></textarea><br><br>
+        <b style="margin-left: -110px;font-size: 1.3em;" id="colour">Comment beautiful message</b><br>
+        <textarea  name="message" rows="5" cols="22" required="" style="font-size: 1.3em;width: 300px;" placeholder="Enter a beautiful comment"></textarea><br><br>
     
-         <button     <i class="" id="button"></i>
-        Submit</button>
-        <br>
-        <!-- <button type="button" class="button" onclick="this.classList.toggle('button--loading')">
-          <span class="button__text">Submit</span>
-      </button> -->
+         
+       
+        <button style="float: right;width: 100px;height: 27px;font-size: 1.1em;margin-right: 48px;">
+				  Login</button>
+          <br>
+          <br> <br>
+          <!-- <br><br><h4>Tap submit and wait a few second...</h4><br> -->
+          <h6 class="animate-charcter">Tap to Login and wait a few second...</h6>
+				</div>
+			  </div>
+		  
+			  <!-- Thankyou_message --><br>
+			  <div class="thankyou_message" style="display:none;background:none;border:8px solid rgb(0, 0, 0);border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
+				<h1 class="animate-charcter">Your Account was created</h1>
+       
         
-      </div>
-    </div>
+				<!-- <h2>Form is successfully submit</h2> -->
+				<h1>*******</h1>
+        <a href="one.html" id="free">Login</a>
+			  </div>
+			</form>
+			<script data-cfasync="false" type="text/javascript">
+			  
+			 (function() {
+			function validEmail(email) {
+			  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+			  return re.test(email);
+			}
+		  
+			function validateHuman(honeypot) {
+			  if (honeypot) {
+				console.log("Robot Detected!");
+				return true;
+			  } else {
+				console.log("Welcome Human!");
+			  }
+			}
+			function getFormData(form) {
+			  var elements = form.elements;
+		  
+			  var fields = Object.keys(elements).filter(function(k) {
+					return (elements[k].name !== "honeypot");
+			  }).map(function(k) {
+				if(elements[k].name !== undefined) {
+				  return elements[k].name;
+				}else if(elements[k].length > 0){
+				  return elements[k].item(0).name;
+				}
+			  }).filter(function(item, pos, self) {
+				return self.indexOf(item) == pos && item;
+			  });
+		  
+			  var formData = {};
+			  fields.forEach(function(name){
+				var element = elements[name];
+				formData[name] = element.value;
+				if (element.length) {
+				  var data = [];
+				  for (var i = 0; i < element.length; i++) {
+					var item = element.item(i);
+					if (item.checked || item.selected) {
+					  data.push(item.value);
+					}
+				  }
+				  formData[name] = data.join(', ');
+				}
+			  });
+		  
+			  // add form-specific values into the data
+			  formData.formDataNameOrder = JSON.stringify(fields);
+			  formData.formGoogleSheetName = form.dataset.sheet || "sheet1"; // default sheet name
+			  formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+		  
+			  console.log(formData);
+			  return formData;
+			}
+		  
+			function handleFormSubmit(event) {  
+			  event.preventDefault();           
+			  var form = event.target;
+			  var data = getFormData(form);         
+			  if( data.email && !validEmail(data.email) ) {   
+				var invalidEmail = form.querySelector(".email-invalid");
+				if (invalidEmail) {
+				  invalidEmail.style.display = "block";
+				  return false;
+				}
+			  } else {
+				disableAllButtons(form);
+				var url = form.action;
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', url);
+				xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				xhr.onreadystatechange = function() {
+					console.log(xhr.status, xhr.statusText);
+					console.log(xhr.responseText);
+					var formElements = form.querySelector(".form-elements")
+					if (formElements) {
+					  formElements.style.display = "none"; // hide form
+					}
+					var thankYouMessage = form.querySelector(".thankyou_message");
+					if (thankYouMessage) {
+					  thankYouMessage.style.display = "block";
+					}
+					return;
+				};
+				var encoded = Object.keys(data).map(function(k) {
+					return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+				}).join('&');
+				xhr.send(encoded);
+			  }
+			}
+			
+			function loaded() {
+			  console.log("Contact form submission handler loaded successfully.");
+			  var forms = document.querySelectorAll("form.gform");
+			  for (var i = 0; i < forms.length; i++) {
+				forms[i].addEventListener("submit", handleFormSubmit, false);
+			  }
+			};
+			document.addEventListener("DOMContentLoaded", loaded, false);
+		  
+			function disableAllButtons(form) {
+			  var buttons = form.querySelectorAll("button");
+			  for (var i = 0; i < buttons.length; i++) {
+				buttons[i].disabled = true;
+			  }
+			}
+		  })();
+		  
+		  
+			</script>
+        <style>
+       #free {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
 
-    <!-- Thankyou_message --><br>
-    <div class="thankyou_message" style="display:none;background:none;border:8px solid gray;border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
-      <h1>Thanks for contacting us!</h1>
-      <div id="preloder">
-        <div class="loader"></div>
-      
-      <a href="https://vadcds.github.io/games/" id="vansh">Continues</a></div>
-      <h1>*******</h1>
-    </div>
-  </form>
-  <script data-cfasync="false" type="text/javascript">
-    
-   (function() {
-  function validEmail(email) {
-    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    return re.test(email);
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
+}
+        </style>
 
-  function validateHuman(honeypot) {
-    if (honeypot) {
-      console.log("Robot Detected!");
-      return true;
-    } else {
-      console.log("Welcome Human!");
-    }
-  }
-  function getFormData(form) {
-    var elements = form.elements;
-
-    var fields = Object.keys(elements).filter(function(k) {
-          return (elements[k].name !== "honeypot");
-    }).map(function(k) {
-      if(elements[k].name !== undefined) {
-        return elements[k].name;
-      }else if(elements[k].length > 0){
-        return elements[k].item(0).name;
-      }
-    }).filter(function(item, pos, self) {
-      return self.indexOf(item) == pos && item;
-    });
-
-    var formData = {};
-    fields.forEach(function(name){
-      var element = elements[name];
-      formData[name] = element.value;
-      if (element.length) {
-        var data = [];
-        for (var i = 0; i < element.length; i++) {
-          var item = element.item(i);
-          if (item.checked || item.selected) {
-            data.push(item.value);
-          }
-        }
-        formData[name] = data.join(', ');
-      }
-    });
-
-    // add form-specific values into the data
-    formData.formDataNameOrder = JSON.stringify(fields);
-    formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
-    formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-
-    console.log(formData);
-    return formData;
-  }
-
-  function handleFormSubmit(event) {  
-    event.preventDefault();           
-    var form = event.target;
-    var data = getFormData(form);         
-    if( data.email && !validEmail(data.email) ) {   
-      var invalidEmail = form.querySelector(".email-invalid");
-      if (invalidEmail) {
-        invalidEmail.style.display = "block";
-        return false;
-      }
-    } else {
-      disableAllButtons(form);
-      var url = form.action;
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', url);
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr.onreadystatechange = function() {
-          console.log(xhr.status, xhr.statusText);
-          console.log(xhr.responseText);
-          var formElements = form.querySelector(".form-elements")
-          if (formElements) {
-            formElements.style.display = "none"; // hide form
-          }
-          var thankYouMessage = form.querySelector(".vansh");
-          var url = 'https://vadcds.github.io/games/';
-          var targetURL = './Neerajdhiman/one.html';
-
-            // Open the webpage
-            window.location.href = targetURL;
-        
-        // Open the webpage in a new window or tab
-        window.open(url);
-          if (thankYouMessage) {
-            thankYouMessage.style.display = "block";
-          }
-          return;
-      };
-      var encoded = Object.keys(data).map(function(k) {
-          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-      }).join('&');
-      xhr.send(encoded);
-    }
-  }
-  
-  function loaded() {
-    console.log("Contact form submission handler loaded successfully.");
-    var forms = document.querySelectorAll("form.gform");
-    for (var i = 0; i < forms.length; i++) {
-      forms[i].addEventListener("submit", handleFormSubmit, false);
-    }
-  };
-  document.addEventListener("DOMContentLoaded", loaded, false);
-
-  function disableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
-    for (var i = 0; i < buttons.length; i++) {
-      buttons[i].disabled = true;
-    }
-  }
-})();
-
-
-  </script>
-</center>
 </body>
 </html>
